@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^games/?$ games.php [NC,L]
+RewriteRule ^games/([0-9]+)/?$ games.php?game_id=$1 [NC,L]
+RewriteRule ^games/([A-Z\s]+)/?$ games.php?game_name=$1 [NC,L]
+RewriteRule ^games/pub/([A-Z\s]+)/?$ games.php?publisher=$1 [NC,L]
